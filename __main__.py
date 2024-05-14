@@ -21,12 +21,10 @@ from utils import check
 from feature_engineering import format_data, generate_features, generate_honeypot_features, generate_ip_features, generate_password_features
 
 
-
 # import data
 def import_data():
     data = pd.read_csv("/Users/nadia_t/Downloads/stingar_data_full-20120562.csv")
     return data
-
 
 
 def train_random_forest(features):
@@ -71,7 +69,6 @@ def eval_random_forest(model, rf_data, predictor_vars):
     }
 
 
-
 def visualize_rf_results(test, predictions):
     CM = confusion_matrix(test.danger, predictions)
     # Visualize it as a heatmap
@@ -92,7 +89,5 @@ if __name__ == '__main__':
     eval_context = eval_random_forest(rf_context.modelRandom, rf_context.rf_data, rf_context.predictor_vars)
     # visualize results in a 2x2 chart
     visualize_rf_results(eval_context.test, eval_context.predictions)
-
-
 
 
