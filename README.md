@@ -116,6 +116,9 @@ def visualize_rf_results(test, predictions):
     plt.show()
 ```
 
+[![visual-output-28.png](https://i.postimg.cc/44MHWJvF/image-28.png)](https://postimg.cc/fkcbLQrx)
+
+
 ## Execution
 
 The main execution block runs the entire process:
