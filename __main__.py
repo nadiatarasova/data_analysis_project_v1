@@ -15,10 +15,10 @@ from sklearn.metrics import confusion_matrix
 import seaborn
 
 # Helper functions
-from utils import check
+from .utils import check
 
 # feature engineering functions
-from feature_engineering import format_data, generate_features, generate_honeypot_features, generate_ip_features, generate_password_features
+from .feature_engineering import format_data, generate_features, generate_honeypot_features, generate_ip_features, generate_password_features
 
 
 # import data
